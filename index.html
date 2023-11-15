@@ -156,16 +156,16 @@
 
     <script>
         document.getElementById("guessForm").addEventListener("submit", function(event) {
-            event.preventDefault(); // Prevent the form from submitting by default
+            event.preventDefault(); 
             
-            // Get the value entered in the input field
+           
             const userCode = document.getElementById("user-code").value;
             
-            // Check if the entered code is 2773 ""
+            
             if (userCode === "2773") {
-                window.location.href = "wish.html"; // Redirect to wish.html
+                window.location.href = "wish.html"; 
             } else {
-                // If the code is wrong, change the card border color to red
+               
                 document.getElementById("card").style.background = "red";
             }
         });
